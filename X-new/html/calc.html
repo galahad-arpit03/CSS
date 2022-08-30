@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="text/javascript">
+        function sum()
+        {
+            var x= document.getElementById("fno").value;
+            var y= document.getElementById("sno").value;
+            x=parseInt(x);
+            y=parseInt(y);
+            var z=x+y;
+            document.getElementById("res").innerHTML=z;
+        }
+    </script>
+
+</head>
+<body>
+    First Name
+    <input type="text" id="fno">
+    <br><br>
+    Second Name
+    <input type="text" name="lno">
+    <br><br>
+    Result
+    <input type="text" id="r">
+    <br><br>
+    <p id="res" style="border : 1px solid red"></p>
+    <br><br>
+    <button onclick="sum()"> Sum </button>
+</body>
+</html>

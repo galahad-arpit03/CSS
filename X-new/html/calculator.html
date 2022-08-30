@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+</head>
+<style>
+    .button {
+        background-color: #4caf50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        /* display: inline-block; */
+        padding-right: 50px;
+        font-size: 16px;
+    }
+
+    button {
+        padding-right: 4px;
+        height: auto;
+        width: 150px;
+    }
+</style>
+
+<script type="text/javascript">
+    function addition() {
+        // document.write("Hello Students");
+        var x = prompt("enter 1st number");
+        var y = prompt("emter 2nd number");
+        x = parseInt(x);
+        y = parseInt(y);
+        var z = x + y;
+        // span is used to print in the same line
+        document.write(
+            "sum of" + x + " and " + y + " = " + "<span> <h1>" + z + "</h1> <span>"
+        );
+        //   document.write("sum of" + x + " and " + y + " = " + z);
+    }
+    function multiplication() {
+        // document.write("Hello Students");
+        var x = prompt("enter 1st number");
+        var y = prompt("emter 2nd number");
+        x = parseInt(x);
+        y = parseInt(y);
+        var z = x * y;
+        // span is used to print in the same line
+        document.write("multiplication of" + x +" and " + y +" = " +"<span> <h1>" +z +"</h1> <span>");
+    }
+    function division() {
+        // document.write("Hello Students");
+        var x = prompt("enter 1st number");
+        var y = prompt("emter 2nd number");
+        x = parseInt(x);
+        y = parseInt(y);
+        var z = x / y;
+        // span is used to print in the same line
+        document.write("division of" +x +" and " +y +" = " +"<span> <h1>" +z + "</h1> <span>");
+    }
+    function substraction() {
+        // document.write("Hello Students");
+        var x = prompt("enter 1st number");
+        var y = prompt("emter 2nd number");
+        x = parseInt(x);
+        y = parseInt(y);
+        var z = x - y;
+        // span is used to print in the same line
+        document.write("substraction of" +x +" and " +y +" = " +"<span> <h1>" +z +"</h1> <span>");
+    }
+</script>
+
+<body>
+    <div class="header">
+        <h3>Calculator</h3>
+    </div>
+    <div class="button">
+        <button onclick="addition();">addition</button>
+        <button onclick="multiplication();">multiplication</button>
+        <button onclick="division();">division</button>
+        <button onclick="substraction();">substraction</button>
+    </div>
+</body>
+
+</html>
