@@ -1,0 +1,29 @@
+
+
+
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 5px 12px;
+    color: white;
+    background: rgb(38, 118, 248);
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.my-2{
+    margin: 26px 0;
+}
+
+.my-1{
+    margin: 5px 0;
+}
+
+.text-center{
+    text-align: center;
+}
